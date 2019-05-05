@@ -1,3 +1,10 @@
+<%= form_tag students_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
 <h1>Student Index</h1>
 <ul>
   <% @students.each do |student| %>
