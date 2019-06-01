@@ -1,0 +1,9 @@
+<%= form_for (search, url: students_path,  method: "GET") do |f| %>
+  <h1> Search Form :</h1>
+  <fieldset>
+    <%= yield f %>
+  </fieldset>
+  <p>
+    <%= f.submit "Search" %>
+  </p>
+<%end%>
